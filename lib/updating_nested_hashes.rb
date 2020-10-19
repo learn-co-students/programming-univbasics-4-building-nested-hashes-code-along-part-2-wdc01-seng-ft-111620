@@ -32,16 +32,16 @@ end
 
 def add_characters
   epic_tragedy = {
-     :montague => {
+    :montague => {
         :patriarch => {name: "Lord Montague", age: "53"},
         :matriarch => {name: "Lady Montague", age: "54"},
         :hero => {name: "Romeo", age: "15", status: "alive"},
         :hero_friends => [
-           {name: "Benvolio", age: "17", attitude: "worried"},
-           {name: "Mercutio", age: "18", attitude: "hot-headed"}
+          {name: "Benvolio", age: "17", attitude: "worried"},
+          {name: "Mercutio", age: "18", attitude: "hot-headed"}
         ]
-     },
-     :capulet => {
+    },
+    :capulet => {
         :patriarch => {name: "Lord Capulet", age: "50"},
         :matriarch => {name: "Lady Capulet", age: "51"},
         :heroine => {name: "Juliet", age: "15", status: "alive"},
@@ -49,13 +49,8 @@ def add_characters
         {name: "Steven", age: "30", attitude: "confused"},
         {name: "Nurse", age: "44", attitude: "worried"}
         ]
-     }
-     :additional_characters => [
-       {:name => "Prince Escalus"},
-       {:name => "Apothecary"}
-     ]
-   }
-
+    }
+  }
 
 
    # Write code below that does the following programmatically:
@@ -67,8 +62,9 @@ def add_characters
    # Code your solution here:
 
 
-
-
+   epic_tragedy[:additional_characters] = []
+   epic_tragedy[:additional_characters][0] = {:name => "Prince Escalus"}
+   epic_tragedy[:additional_characters][1] = {:name => "Apothecary"}
 
 
    # After your code, the following line will return the altered hash
